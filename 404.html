@@ -33,9 +33,17 @@ SOFTWARE.-->
 	<script async="" src="404/analytics.js"></script>
 	<script type="text/javascript" src="404/modernizr.custom.js"></script>
  	<title>404 — This is not the page youre looking for.</title>
+	<link rel="import" href="header.html">
 </head>
 
 <body class="page page-404">
+	<script>
+		var link = document.querySelector('link[rel="import"]');
+		var content = link.import;
+		var el = content.querySelector('.bar');
+		document.body.appendChild(el.cloneNode(true));
+	 </script>
+
 <div class="container" id="container">
 	<div class="fallback fillParent vAligner text-center" style="display: none;">
 		<div class="vItem">
