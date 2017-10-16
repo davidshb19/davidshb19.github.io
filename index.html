@@ -19,45 +19,56 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.-->
-<!DOCTYPE html> 
-<html lang="en-US"> 
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>wezerds - home</title>
 	<style>
-		body {
-			background: url("pictures/index-background-h-2017.jpg");
-			background-size: 100%;
-			background-repeat: repeat;
-			padding-top: 40px;
-		}
-		h2 {
-			color: red;
-		}
-		h3 {
-			color: red;
-		}
-		p {
-			color: red;
-		}
-		hr {
-			border-color: red;
-		}
-		img, embed, object, video {max-width: 100%;}
+	       body {
+	           background: url("pictures/index-background-h-2017.jpg") no-repeat center center fixed;
+	           background-size: 100%;
+	           background-repeat: repeat;
+	           padding-top: 40px;
+	       }
+	       html { 
+	         background: url(../pictures/index-background-h.jpg) no-repeat center center fixed; 
+	         -webkit-background-size: cover;
+	         -moz-background-size: cover;
+	         -o-background-size: cover;
+	         background-size: cover;
+	       }
+	       h2 {
+	           color: red;
+	       }
+	       h3 {
+	           color: red;
+	       }
+	       p {
+	           color: red;
+	       }
+	       hr {
+	           border-color: red;
+	       }
+	       img, embed, object, video {max-width: 100%;}
 	</style>
-	<link rel="import" href="header.html">
+	<link href="header.html" rel="import">
 </head>
-<body> 
+<body>
 	<!--<body bgcolor="#9E0D00">-->
 	<script>
-		var link = document.querySelector('link[rel="import"]');
-		var content = link.import;
-		var el = content.querySelector('.bar');
-		document.body.appendChild(el.cloneNode(true));
-	 </script>
+	       var link = document.querySelector('link[rel="import"]');
+	       var content = link.import;
+	       var el = content.querySelector('.bar');
+	       document.body.appendChild(el.cloneNode(true));
+	</script>
 	<hr>
-	<center><h2>Changes</h2></center>
-	<center><h3>As many of you have probably noticed there is a new URL. That is because the github account for the old one I got locked out of. Also some people may notice vary settle differences and that is because I am working on organizing my website to load faster and make it easer for me to edit. So thank you for sticking with me on my journey in HTML</h3></center>
+	<center>
+		<h2>Changes</h2>
+	</center>
+	<center>
+		<h3>As many of you have probably noticed there is a new URL. That is because the github account for the old one I got locked out of. Also some people may notice vary settle differences and that is because I am working on organizing my website to load faster and make it easer for me to edit. So thank you for sticking with me on my journey in HTML</h3>
+	</center>
 	<hr>
- </body> 
-</html> 
+</body>
+</html>
