@@ -26,51 +26,48 @@ SOFTWARE.-->
 	<title>Miller v. California</title>
 	<link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 	<style>
-	 body {
-			background: url("./pictures/index-background-norm.jpg") no-repeat center center fixed;
-			background-size: 100%;
-			background-repeat: repeat;
-			padding-top: 40px;
-	 }
-	 h1
-	 {
-	  color: white;
-	  font-family: 'Gugi', cursive;
-	 }
-	  h2 {
-		 color: white;
-		 font-size:20;
-	 }
-		h3 {
-			color: red;
-		}
-		p {
-			color: red;
-		}
-		hr {
-			border-color: red;
-		}
+	body {
+		background: url("./pictures/index-background-norm.jpg") no-repeat center center fixed;
+		background-size: 100%;
+		background-repeat: repeat;
+		padding-top: 40px;
+	}
+	h1 {
+		color: white;
+		font-family: 'Gugi', cursive;
+		font-size:60px;
+		text-shadow: 5px 5px #A9A9A9;
+
+	}
+	h2 {
+		color: white;
+		font-size:35px;
+	}
+	hr {
+		border-color: #A9A9A9;
+	}
 	div.rightB {
-    width:500px;
-    margin: auto;
-    border: 3px solid #73AD21;
-}
+		position: absolute;
+		right: 50px;
+		width: 500px;
+		margin: auto;
 	}
 	</style>
 	<link href="header.html" rel="import">
 </head>
 <body>
 	<script>
-		var link = document.querySelector('link[rel="import"]');
-		var content = link.import;
-		var el = content.querySelector('.bar');
-		document.body.appendChild(el.cloneNode(true));
+	 var link = document.querySelector('link[rel="import"]');
+	 var content = link.import;
+	 var el = content.querySelector('.bar');
+	 document.body.appendChild(el.cloneNode(true));
 	</script>
 	<center>
 		<h1>Landmark Supreme Court Rase</h1>
 	</center>
 	<hr>
-	<div align="right" class="rightB"><!--aight right not working-->
+	<div align="right" class="rightB">
+		<!--aight right not working-->
 		<h2>This website is dedicated to all the Supreme court cases that left an impact on our Judiciary System.</h2>
 	</div>
 </body>
