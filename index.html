@@ -22,7 +22,7 @@ SOFTWARE.-->
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>wezerds - home</title>
 
 	<style>
@@ -45,24 +45,19 @@ SOFTWARE.-->
 			 border-color: red;
 	 }
 	</style>
-	<link href="header.html" rel="import">
+	<link rel="import" href="header.html">
 </head>
 <body>
+	<!--<body bgcolor="#9E0D00">-->
 	<script>
-	 var link = document.querySelector('link[rel="import"]');
-	 var content = link.import;
-	 var el = content.querySelector('.bar');
-	 document.body.appendChild(el.cloneNode(true));
-	</script>
-	<center>
-		<h1>Landmark Supreme Court Rase</h1>
-	</center>
+		var link = document.querySelector('link[rel="import"]');
+		var content = link.import;
+		var el = content.querySelector('.bar');
+		document.body.appendChild(el.cloneNode(true));
+	 </script>
 	<hr>
-	<center>
-		<h2>happy halloween</h2>
-	</center>
-	<center>
-		<h3>I hope you enjoy the new halloween theme for 2017</h3>
-	</center>
-</body>
+	<center><h2>Changes</h2></center>
+	<center><h3>As many of you have probably noticed there is a new URL. That is because the github account for the old one I got locked out of. Also some people may notice vary settle differences and that is because I am working on organizing my website to load faster and make it easer for me to edit. So thank you for sticking with me on my journey in HTML</h3></center>
+	<hr>
+ </body>
 </html>
