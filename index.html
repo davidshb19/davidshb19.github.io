@@ -25,42 +25,38 @@ SOFTWARE.-->
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>wezerds - home</title>
 	<style>
-	          body {
-	                 background: url("./pictures/index-background-norm.png") no-repeat center center fixed;
-	                 background-size: 100%;
-	                 background-repeat: repeat;
-	                 padding-top: 40px;
-	          }
-	          h1
-	          {
-	           color: white;
-	          }
-	           h2 {
-	              color: red;
-	          }
-	             h3 {
-	                 color: red;
-	             }
-	             p {
-	                 color: red;
-	             }
-	             hr {
-	                 border-color: red;
-	             }    
+			body {
+			  margin: 0;
+			  font-family: Arial;
+			  font-size: 17px;
+			}
+			.content {
+			  position: fixed;
+			  bottom: 0;
+			  background: rgba(0, 0, 0, 0.5);
+			  color: #f1f1f1;
+			  width: 100%;
+			  padding: 20px;
+			}
+			#myVideo {
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+			}
 	</style>
 	<link href="header.html" rel="import">
 </head>
 <body>
-	<!--<body bgcolor="#9E0D00">-->
-	<script>
-	                         var link = document.querySelector('link[rel="import"]');
-	                         var content = link.import;
-	                         var el = content.querySelector('.bar');
-	                         document.body.appendChild(el.cloneNode(true));
-	</script>
-	<center>
-		<h1>Welcome to wezerds</h1>
-	</center>
-	<hr>
+	<video autoplay muted loop id="myVideo">
+  <source src="HiCarson.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+	</video>
+	<div class="content">
+		<h1>MadeleineStatic</h1>
+		<a href="https://www.youtube.com/channel/UCCkUHPbh-3RofUplyYmcNmQ">Youtube</a>
+		<a href="https://twitter.com/itsmaffie">Twitter</a>
+	</div>
 </body>
 </html>
